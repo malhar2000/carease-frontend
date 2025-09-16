@@ -121,3 +121,12 @@ export const DELETE_QUOTATION_ITEM_API = (id: string): ApiEndpoint => ({
   isMultipart: false,
   showToast: true,
 });
+
+// constants/apiConstants/shopQuotation.ts
+export const UPDATE_SUGGESTED_ITEM_STATUS_API = (itemId: string): ApiEndpoint => ({
+  url: apiUrls.UPDATE_SUGGESTED_ITEM_STATUS_URL(itemId), // define this in apiUrls
+  method: "PATCH",
+  withToken: true,
+  isMultipart: false,
+  showToast: true,
+});

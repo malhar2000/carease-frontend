@@ -126,6 +126,8 @@ export const apiUrls = {
     `/api/v1/shop-quotation-items/${id}/revised`,
   DELETE_QUOTATION_ITEM_URL: (id: string) =>
     `/api/v1/shop-quotation-items/${id}`,
+  UPDATE_SUGGESTED_ITEM_STATUS_URL: (itemId: string) =>
+    `/api/v1/shop-quotations/suggested/${itemId}`,
 
   // Shop User Service Requests
   SHOP_USER_SERVICE_REQUEST_CREATE_OR_GET_URL: "/api/v1/shop-user-service-requests",
